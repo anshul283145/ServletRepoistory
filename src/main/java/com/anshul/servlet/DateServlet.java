@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 @WebServlet("/date")
 public class DateServlet extends HttpServlet {
+     private Map<String,Object> cache = new HashMap<String,Object>();
 
 	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
                  int i = 10;
@@ -24,4 +25,8 @@ public class DateServlet extends HttpServlet {
 		// close stream
 		pw.close();
 	}// service(-,-)
+     //HIS-301 changes 
+    public void loadDataToCache(){
+      //logic 
+    }
 }// class
