@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 @WebServlet("/date")
 public class DateServlet extends HttpServlet {
+    private static final REST_URL = "https://www.equifax.com/getScores";
 
 	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
                  int i = 10;
