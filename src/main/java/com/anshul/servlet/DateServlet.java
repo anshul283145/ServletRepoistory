@@ -23,4 +23,8 @@ public class DateServlet extends HttpServlet {
 		// close stream
 		pw.close();
 	}// service(-,-)
+   //HIS-200 related changes
+  public void doProcess(){
+   //logic goes here
+  }
 }// class
